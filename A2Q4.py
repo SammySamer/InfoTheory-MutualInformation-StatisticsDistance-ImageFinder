@@ -26,12 +26,12 @@ def I_Dist(X,Y):
 
   Xmin = np.amin(X)
   X = X - Xmin
-  Xmax = max(X)
+  Xmax = np.amax(X)
   X = X * (1-eps) / Xmax
 
-  Ymin = min(Y)
+  Ymin = np.amin(Y)
   Y = Y - Ymin
-  Ymax = max(Y)
+  Ymax = np.amax(Y)
   Y = Y * (1-eps) / Ymax
 
   M = np.floor(1 + np.log2(N) + 0.5).astype(int)
