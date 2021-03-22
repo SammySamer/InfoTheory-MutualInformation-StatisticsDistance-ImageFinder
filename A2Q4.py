@@ -15,11 +15,11 @@ x5 = np.empty([0,364])
 
 for currLine in lines:
   splitLine = currLine.split()
-  x1 = np.append(x1, int(splitLine[0]) / 10000)
-  x2 = np.append(x2, int(splitLine[1]) / 10000)
-  x3 = np.append(x3, int(splitLine[2]) / 10000)
-  x4 = np.append(x4, int(splitLine[3]) / 10000)
-  x5 = np.append(x5, int(splitLine[4]) / 10000)
+  x1 = np.append(x1, int(splitLine[0]) / 100)
+  x2 = np.append(x2, int(splitLine[1]) / 100)
+  x3 = np.append(x3, int(splitLine[2]) / 100)
+  x4 = np.append(x4, int(splitLine[3]) / 100)
+  x5 = np.append(x5, int(splitLine[4]) / 100)
 
 def I_Dist(X,Y): 
   N = len(X)
