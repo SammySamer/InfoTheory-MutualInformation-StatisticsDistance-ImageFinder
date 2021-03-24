@@ -46,8 +46,10 @@ p_s_np = np.asarray(p_s)
 smax = np.argmax(p_s_np)
 
 PFrame = pd.DataFrame(P)
+HFrame = pd.DataFrame(H)
+psFrame = pd.DataFrame(p_s)
 
 print("Probs Matrix: \n", PFrame)
-print("Entropy Matrix: \n", H)
-print("Similarity Measures: \n", p_s)
+print("Entropy Matrix: \n", HFrame)
+print("Similarity Measures: \n", psFrame)
 print("Index of most similar image: ", smax)
