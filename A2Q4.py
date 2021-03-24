@@ -77,7 +77,6 @@ for i in range (5):
 for i in range (5): 
   dist[i, 5] = sum(dist[i]) / 5
   dist[5, i] = sum(dist[:,i]) / 5
-dist[5,5] = sum(dist[5])
 
 infoFrame = pd.DataFrame(info)
 distFrame = pd.DataFrame(dist)
